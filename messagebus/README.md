@@ -1,4 +1,4 @@
-# Eventbus
+# message bus
 
 Simple Eventbus created using NCHAN.
 Exposes `/pub` and `/sub` routes.
