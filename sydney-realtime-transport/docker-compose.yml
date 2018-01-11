@@ -1,0 +1,8 @@
+version: '3'
+services:
+  dev:
+    working_dir: /app
+    image: node:8.9.4-alpine
+    command: echo 'cool!'
+    volumes:
+      - .:/app

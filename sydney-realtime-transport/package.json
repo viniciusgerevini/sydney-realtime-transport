@@ -1,0 +1,22 @@
+{
+  "name": "sydney-realtime-transport",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Vinicius Gerevini <viniciusgerevini@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src",
+    "test": "ava test",
+    "test:watch": "ava test -w -v"
+  },
+  "dependencies": {
+    "gtfs-realtime-bindings": "^0.0.4",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}
