@@ -5,9 +5,10 @@
   "author": "Vinicius Gerevini <viniciusgerevini@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start": "node src/index.js",
     "lint": "eslint src",
-    "test": "ava test",
-    "test:watch": "ava test -w -v"
+    "test": "ava",
+    "test:watch": "ava -w -v"
   },
   "dependencies": {
     "gtfs-realtime-bindings": "^0.0.4",
