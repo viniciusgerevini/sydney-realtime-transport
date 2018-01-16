@@ -1,14 +1,17 @@
+const request = require('request');
+const eventsource = require('eventsource');
+
 function MessageBus(
   host,
-  httpClient = require('request'),
-  EventSource = require('eventsource')
+  httpClient = request,
+  EventSource = eventsource
 ) {
   const eventSource = new EventSource(`${host}/sub`);
-  let listeners = {};
+  const listeners = {};
 
   eventSource.onmessage = (message) => {
     const data = JSON.parse(message.data);
-    if (listeners[data.name])  {
+    if (listeners[data.name]) {
       listeners[data.name](data);
     }
   };
@@ -28,7 +31,7 @@ function MessageBus(
     listeners[messageType] = callback;
   }
 
-  return { publish, subscribe }
+  return { publish, subscribe };
 }
 
 module.exports = MessageBus;

@@ -15,7 +15,7 @@ test.beforeEach(() => {
 
   eventSourceClientStub = {};
 
-  const eventSourceClientConstructorStub = function (host) {
+  const eventSourceClientConstructorStub = function stub(host) {
     eventSourceClientStub.host = host;
     return eventSourceClientStub;
   };
