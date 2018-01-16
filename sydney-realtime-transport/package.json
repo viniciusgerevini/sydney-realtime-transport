@@ -11,6 +11,7 @@
     "test:watch": "ava -w -v"
   },
   "dependencies": {
+    "eventsource": "^1.0.5",
     "gtfs-realtime-bindings": "^0.0.4",
     "request": "^2.83.0"
   },
