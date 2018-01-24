@@ -6,3 +6,5 @@ services:
     command: echo 'cool!'
     volumes:
       - .:/app
+    environment:
+      - APP_ENV=$APP_ENV
