@@ -9,3 +9,11 @@ test:
 .PHONY: test.watch
 test.watch:
 	docker-compose run --rm dev yarn test:watch
+
+.PHONY: start
+start:
+	docker-compose up -d server eventbus
+
+.PHONY: stop
+stop:
+	docker-compose stop server eventbus

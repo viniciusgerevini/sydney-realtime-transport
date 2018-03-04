@@ -92,6 +92,7 @@ test('publish message when data updated', (t) => {
 
   t.deepEqual(messageBusFake.lastPublishedMessage, {
     name: 'TRANSPORT_LIVE_POSITION_UPDATED',
-    data: updateData
+    data: updateData,
+    version: 1
   });
 });

@@ -13,7 +13,8 @@ function App(messageBus, updater, date = Date, timeout = setTimeout) {
   updater.onUpdate((data) => {
     messageBus.publish({
       name: 'TRANSPORT_LIVE_POSITION_UPDATED',
-      data
+      data,
+      version: 1
     });
   });
 
