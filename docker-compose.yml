@@ -1,8 +1,24 @@
-version: '2'
+version: '3'
 services:
-  eventbus:
-    build:
-      context: ./messagebus
-      dockerfile: Dockerfile
+  dev:
+    working_dir: /app
+    image: node:8.9.4-alpine
+    command: echo 'cool!'
+    volumes:
+      - .:/app
+    environment:
+      - APP_ENV=$APP_ENV
+  server:
+    working_dir: /app
+    image: node:8.9.4-alpine
+    command: npm start
+    volumes:
+      - .:/app
+    environment:
+      - APP_ENV=$APP_ENV
+    links:
+      - eventbus
+  messagebus:
+    image: vgerevini/nchan-message-bus
     ports:
       - "8080:80"

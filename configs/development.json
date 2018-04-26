@@ -1,5 +1,5 @@
 {
-  "messageBusHost": "http://eventbus",
+  "messageBusHost": "http://messagebus",
   "realtimeApi": {
     "url": "",
     "apiKey": "",
