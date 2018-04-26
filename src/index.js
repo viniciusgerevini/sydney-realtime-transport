@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const config = require('./config').load();
 const MessageBus = require('./messagebus');
 const app = require('./app');
@@ -32,3 +33,4 @@ messageBus.onConnect(() => {
 messageBus.connect();
 
 app(messageBus, updater);
+/* eslint-enable no-console */

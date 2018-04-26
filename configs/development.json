@@ -1,8 +1,8 @@
 {
   "messageBusHost": "http://messagebus",
   "realtimeApi": {
-    "url": "",
-    "apiKey": "",
+    "url": "{{REALTIME_API_URL}}",
+    "apiKey": "{{REALTIME_API_KEY}}",
     "updateInterval": 10000
   }
 }

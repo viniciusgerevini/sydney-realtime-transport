@@ -8,6 +8,8 @@ services:
       - .:/app
     environment:
       - APP_ENV=$APP_ENV
+      - REALTIME_API_URL=$REALTIME_API_URL
+      - REALTIME_API_KEY=$REALTIME_API_KEY
   server:
     working_dir: /app
     image: node:8.9.4-alpine
@@ -16,6 +18,8 @@ services:
       - .:/app
     environment:
       - APP_ENV=$APP_ENV
+      - REALTIME_API_URL=$REALTIME_API_URL
+      - REALTIME_API_KEY=$REALTIME_API_KEY
     links:
       - messagebus
   messagebus:
