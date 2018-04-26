@@ -33,29 +33,29 @@ The service only starts updating when the following message is received:
 
 ```json
 {
-   name: 'TRANSPORT_LIVE_POSITION_REQUESTED',
-   data: { city: 'AU_SYDNEY' }
+   "name": "TRANSPORT_LIVE_POSITION_REQUESTED",
+   "data": { "city": "AU_SYDNEY" }
 }
 ```
 If no message is received for 10 minutes the service becomes idle again.
 
-On update the following message is sent:
+On update an message like the following example is sent:
 
 ```json
 {
-  name: 'TRANSPORT_LIVE_POSITION_UPDATED',
-  data: {
-    city: 'AU_SYDNEY',
-    id: <string>,
-    type: <string>,
-    trip_id: <string>,
-    route_id: <string>,
-    position: {
-      latitude: <float>,
-      longitude: <float>
+  "name": "TRANSPORT_LIVE_POSITION_UPDATED",
+  "data": {
+    "city": "AU_SYDNEY",
+    "id": "1234acd",
+    "type": "bus",
+    "trip_id": "123",
+    "route_id": "abcd",
+    "position": {
+      "latitude": -30.0000000,
+      "longitude": -29.000000,
     }
   },
-  version: <int>
+  "version": 1
 }
 ```
 
