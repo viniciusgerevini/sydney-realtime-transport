@@ -6,7 +6,7 @@ Responsible for getting information about Sydney's public transport position in 
 
 Fetches data from  [Open Data NSW](https://opendata.transport.nsw.gov.au/)
 
-*This service still a working progress*
+*This service still under development*
 
 ## Set up
 
