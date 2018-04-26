@@ -34,7 +34,8 @@ test('parse bus object', (t) => {
     position: {
       latitude: feedObject.vehicle.position.latitude,
       longitude: feedObject.vehicle.position.longitude
-    }
+    },
+    city: 'AU_SYDNEY'
   }];
 
   t.deepEqual(parser(feed), expected);
@@ -85,7 +86,8 @@ test('should exclude objects without position', (t) => {
     position: {
       latitude: feedObject.vehicle.position.latitude,
       longitude: feedObject.vehicle.position.longitude
-    }
+    },
+    city: 'AU_SYDNEY'
   }];
 
   t.deepEqual(parser(feed), expected);

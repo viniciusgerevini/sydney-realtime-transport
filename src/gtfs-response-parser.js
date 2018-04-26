@@ -21,7 +21,8 @@ function parseEntity(feed) {
     position: {
       latitude: feed.vehicle.position.latitude,
       longitude: feed.vehicle.position.longitude
-    }
+    },
+    city: 'AU_SYDNEY'
   };
 }
 
