@@ -17,7 +17,7 @@ services:
     environment:
       - APP_ENV=$APP_ENV
     links:
-      - eventbus
+      - messagebus
   messagebus:
     image: vgerevini/nchan-message-bus
     ports:

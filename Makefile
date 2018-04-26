@@ -12,8 +12,8 @@ test.watch:
 
 .PHONY: start
 start:
-	docker-compose up -d server eventbus
+	docker-compose up -d server messagebus
 
 .PHONY: stop
 stop:
-	docker-compose stop server eventbus
+	docker-compose stop server messagebus
