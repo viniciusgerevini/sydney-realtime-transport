@@ -55,7 +55,8 @@ On update an message like the following example is sent:
       "longitude": -29.000000,
     }
   },
-  "version": 1
+  "version": 1,
+  "date": 1516097850519
 }
 ```
 

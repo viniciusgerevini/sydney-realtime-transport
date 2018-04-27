@@ -14,7 +14,8 @@ function App(messageBus, updater, date = Date, timeout = setTimeout) {
     messageBus.publish({
       name: 'TRANSPORT_LIVE_POSITION_UPDATED',
       data,
-      version: 1
+      version: 1,
+      date: date.now()
     });
   });
 
